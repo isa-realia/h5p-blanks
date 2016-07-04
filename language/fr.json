@@ -1,142 +1,156 @@
 {
   "semantics": [
     {
+      "label": "Image / vidéo",
+      "fields": [
+      {
+        "label": "Type",
+        "description": "Image ou vidéo à afficher au-dessus de la question."
+      }
+    ]
     },
     {
       "label": "Consigne",
+      "default": "Complète les trous.",
       "description": "La consigne indique ce que l'utilisateur doit faire."
     },
     {
-      "label": "Blocs de Texte",
-      "entity": "Texte block",
+      "label": "Blocs de texte",
+      "entity": "Bloc de texte",
       "field": {
-        "label": "Line of Texte",
-        "description": "Des trous sont inseres avec une asterisque (*) devant et derriere le mot/la phrase correct. Les reponses possibles sont separees par un slash (/). Vous pouvez ajouter une aide en utilisant les deux points (:) avant cette aide. Exemple: Les exercices H5P peuvent etre crees en utilisant *un navigateur/navigateur internet:Quelque chose que vous utilisez tous les jours*."
+        "label": "Ligne de texte",
+        "placeholder": "Paris est la capitale de la *France*.",
+        "description": "Pour faire un trou, ajoutez un astérisque (*) avant et après le mot/l'expression à trouer. Les différentes réponses acceptées sont séparées par un slash (/). Vous pouvez ajouter un indice en utilisant deux points (:) avant l'indice. (Exemple: Les exercices H5P peuvent être créés en utilisant *un navigateur/navigateur:Quelque chose que vous utilisez tous les jours*)."
       }
     },
     {
-      "label": "Texte de Feedback",
-      "description": "Texte de Feedback, variables possibles: @score et @total. Exemple: 'Vous avez @score sur un total possible de @total points.'"
+      "label": "Texte de commentaire",
+      "default": "Vous avez obtenu @score point(s) sur @total",
+      "description": "Texte de commentaire, variables possibles : @score et @total. Exemple: 'Vous avez @score point(s) sur un total possible de @total point(s).'"
     },
     {
-      "label": "Texte pour le bouton \"Montrer la solution\""
+      "label": "Texte pour le bouton \"Voir la solution\"",
+       "default": "Voir la solution"
     },
     {
-      "label": "Texte pour le bouton \"Reessayer\""
+      "label": "Texte pour le bouton \"Recommencer\"",
+       "default": "Recommencer"
     },
     {
-      "label": "Texte pour le bouton \"Verifier\""
+      "label": "Texte pour le bouton \"Vérifier\"",
+       "default": "Vérifier"
     },
     {
-      "label": "Texte pour le message \"Tout n'est pas fini\""
+      "label": "Texte pour le message \"Tout n'est pas fini\"",
+       "default": "Vous devez remplir tous les trous avant de voir la solution",
     },
     {
-      "label": "Text for \"':ans' is correct\" message",
-      "default": "':ans' is correct"
+      "label": "Texte pour le message \"':ans' : réponse juste\"",
+      "default": "':ans' : réponse juste"
     },
     {
-      "label": "Text for \"':ans' is wrong\" message",
-      "default": "':ans' is wrong"
+      "label": "Texte pour le message \"':ans' : réponse incorrecte\"",
+      "default": "':ans' : réponse incorrecte"
     },
     {
-      "label": "Text for \"Answered correctly\" message",
-      "default": "Answered correctly"
+      "label": "Texte pour le message \"Bonne réponse\"",
+      "default": "Réponse juste"
     },
     {
-      "label": "Text for \"Answered incorrectly\" message",
-      "default": "Answered incorrectly"
+      "label": "Texte pour le message \"Réponse incorrecte\"",
+      "default": "Réponse incorrecte"
     },
     {
-      "label": "Assistive technology label for solution",
-      "default": "Correct answer:"
+      "label": "Texte d'assistance technologique pour la solution",
+      "default": "Réponse correcte : "
     },
     {
-      "label": "Assistive technology label for input field",
-      "description": "Use @num and @total to replace current cloze number and total cloze number",
-      "default": "Blank input @num of @total"
+      "label": "Texte d'assistance technologique pour le champ de texte",
+      "description": "Utilisez @num pour le trou en cours et @total pour exprimer le nombre total de trous",
+      "default": "Trou @num sur @total"
     },
     {
-      "label": "Assistive technology label for saying an input has a tip tied to it",
-      "default": "Tip available"
+      "label": "Texte d'assistance technologique pour dire qu'un trou dispose d'un indice",
+      "default": "Indice disponible"
     },
     {
-      "label": "Tip icon label",
-      "default": "Tip"
+      "label": "Texte de l'icone de l'indice",
+      "default": "Indice"
     },
     {
-      "label": "Options des exercices.",
-      "description": "Ces options permettent de parametrer les variables des exercices.",
+      "label": "Réglages des options.",
+      "description": "Ces options vous permettent de paramétrer le déroulement de l'exercice.",
       "fields": [
         {
-          "label": "Activer le bouton \"Reessayer\""
+          "label": "Activer le bouton \"Recommencer\"",
         },
         {
-          "label": "Activer le bouton \"Montrer la solution\""
+          "label": "Activer le bouton \"Voir la solution\""
         },
         {
-          "label": "Verifier les reponses automatiquement."
+          "label": "Vérifier la réponse automatiquement après la saisie."
         },
         {
-          "label": "Sensible a la casse",
-          "description": "Afin que la reponse soit exactement celle attendue."
+          "label": "Sensible à la casse",
+          "description": "La réponse de l'utilisateur doit alors être exactement identique à celle qui est attendue."
         },
         {
-          "label": "Tous les champs doivent etre remplis pour demander a voir la solution."
+          "label": "Tous les champs doivent être remplis pour demander à voir la solution."
         },
         {
-          "label": "Les champs de reponse sont sur des lignes separees."
+          "label": "Les champs de réponse sont sur des lignes séparées."
         },
         {
-          "label": "Disable image zooming for question image."
+          "label": "Désactiver l'agrandissement de l'image de la question."
         },
         {
-          "label": "Show confirmation dialog on \"Check\"",
-          "description": "This options is not compatible with the \"Automatically check answers after input\" option"
+          "label": "Afficher la fenêtre de confirmation pour \"Vérifier\"",
+          "description": "Cette option n'est pas compatible avec l'option \"Vérifier la réponse automatiquement après la saisie.\""
         },
         {
-          "label": "Show confirmation dialog on \"Retry\""
+          "label": "Afficher la fenêtre de confirmation pour \"Recommencer\""
         }
       ]
     },
     {
-      "label": "Check confirmation dialog",
+      "label": "Fenêtre de confirmation pour \"Vérifier\"",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Finish ?"
+          "label": "Texte du titre",
+          "default": "Terminer ?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to finish ?"
+          "label": "Texte du contenu",
+          "default": "Êtes-vous sûr de vouloir terminer ?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Texte du bouton d'annulation",
+          "default": "Annuler"
         },
         {
-          "label": "Confirm button label",
-          "default": "Finish"
+          "label": "Texte du bouton de confirmation",
+          "default": "Terminer"
         }
       ]
     },
     {
-      "label": "Retry confirmation dialog",
+      "label": "Fenêtre de confirmation pour \"Recommencer\"",
       "fields": [
         {
-          "label": "Header text",
-          "default": "Retry ?"
+          "label": "Texte du titre",
+          "default": "Recommencer ?"
         },
         {
-          "label": "Body text",
-          "default": "Are you sure you wish to retry ?"
+          "label": "Texte du contenu",
+          "default": "Êtes-vous sûr de vouloir recommencer ?"
         },
         {
-          "label": "Cancel button label",
-          "default": "Cancel"
+          "label": "Texte du bouton d'annulation",
+          "default": "Annuler"
         },
         {
-          "label": "Confirm button label",
-          "default": "Confirm"
+          "label": "Texte du bouton de confirmation",
+          "default": "Confirmer"
         }
       ]
     }
